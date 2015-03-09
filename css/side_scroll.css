@@ -1,0 +1,30 @@
+.sidescroll {
+	height: 450px;
+	width: 800px;
+}
+
+.sidescroll > .pics {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+.sidescroll > .pics > img:not(.scroll-active) {
+	display: none;
+}
+
+.sidescroll > .pics > img.scroll-active {
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	transition: left 500ms linear;
+}
+
+.sidescroll > .pics > img.scroll-active.left {
+	left: -100%;
+}
+
+.sidescroll > .pics > img.scroll-active.right {
+	left: 100%;
+}
