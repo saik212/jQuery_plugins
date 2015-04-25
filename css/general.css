@@ -1,0 +1,66 @@
+/*Header styles*/
+header {
+	background: #bdc3c7;
+	display: block;
+}
+
+.lndg-text {
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Lato';
+}
+
+/*Content styles*/
+#content {
+	width: 1000px;
+	height: 600px;
+	margin: auto;
+
+	margin-top: 20px;
+	font-family: 'Lato';
+}
+
+/*Info styles*/
+.plugin-select {
+	float: left;
+	box-sizing: border-box;
+	width: 200px;
+	padding: 20px;
+	background: #16a085;
+}
+
+/*Plugin Wrapper styles*/
+.plugins-wrapper {
+	float: right;
+	box-sizing: border-box;
+	width: 800px;
+	background: #1abc9c;
+}
+
+.plugin-header {
+	text-align: center;
+	background: #fff;
+	font-size: 30px;
+	margin-bottom: 10px;
+	background: #2ecc71;
+}
+
+/*Sidescroll styles*/
+.scroll-buttons {
+	width: 35%;
+	margin: auto;
+
+	text-align: center;
+	font-size: 30px;
+}
+.scroll-right {
+	float: left;
+	margin: 5px;
+}
+
+.scroll-left {
+	float: right;
+	margin: 5px;
+}

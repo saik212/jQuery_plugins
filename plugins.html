@@ -4,6 +4,10 @@
 	<title>Plugins!</title>
 	<script src="js/jquery-1.11.1.js"></script>
 	<script src="js/jquery.serializejson.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/defaults.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 	<script src="js/tabs.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/tabs.css">
@@ -11,33 +15,62 @@
 	<script src="js/side_scroll.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/side_scroll.css">
 
+	<script src="js/zoom.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/zoom.css">
+
 </head>
 
 <body>
-	<ul class="tabs" data-content-tabs="#content-tabs">
-		<li><a href="#charmander" class="active">Charmander</a></li>
-		<li><a href="#squirtle">Squirtle</a></li>
-		<li><a href="#bulbasaur">Bulbasaur</a></li>
-	</ul>
+	<header>
+		<div class="lndg-text">jQuery Plugins!</div>
+	</header>
 
-	<div id="content-tabs">
-		<div class="tab-pane active" id="charmander"><p>CHAR CHAR</p></div>
-		<div class="tab-pane" id="squirtle"><p>SQUIRTLE SQUIRT</p></div>
-		<div class="tab-pane" id="bulbasaur"><p>BULBA SAUR</p></div>
-	</div>
+	<section class="group" id="content">
+		<section class="plugin-select">
+			<h1>Select a plugin:</h1>
+			<ul class="tabs" data-content-tabs="#content-tabs">
+				<li><a href="#desc-tabs">Tabs</a></li>
+				<li><a href="#desc-scroll" class="active">Side-Scroll</a></li>
+				<li><a href="#desc-zoom">Zoom</a></li>
+			</ul>
+		</section>
+		<section class="plugins-wrapper">
+			<h1 class="plugin-header">Plugin Header!</h1>
 
-	<div class="sidescroll">
-		<div class="pics">
-			<img src="images/sg_img0.jpg">
-			<img src="images/sg_img1.jpg">
-			<img src="images/sg_img2.jpg">
-			<img src="images/sg_img3.jpg">
-			<img src="images/sg_img4.jpg">
-			<img src="images/sg_img5.jpg">
-			<img src="images/sg_img6.png">
-		</div>
-		<a href="javascript:void(0)" class="scroll-right">Prev</a>
-		<a href="javascript:void(0)" class="scroll-left">Next</a>
-	</div>
+	<!-- 		<ul class="tabs" data-content-tabs="#content-tabs">
+				<li><a href="#desc-tabs" class="active">Tabs</a></li>
+				<li><a href="#desc-scroll">Scrollable</a></li>
+				<li><a href="#desc-zoom">Zoom</a></li>
+			</ul> -->
+
+			<div id="content-tabs">
+				<!-- Tabs Pane -->
+				<div class="tab-pane" id="desc-tabs"><p>Tabs allows for a clean look to your layout and styles by fading in the information you want and fading out what you don't want to see.</p></div>
+
+				<!-- Zoom Pane -->
+				<div class="tab-pane" id="desc-zoom"><p>BULBA SAUR</p></div>
+
+				<!-- Side-Scroll Pane -->
+				<div class="sidescroll tab-pane active" id="desc-scroll">
+					<div class="scroll-buttons group">
+						<a href="javascript:void(0)" class="scroll-right">Prev</a>
+						<a href="javascript:void(0)" class="scroll-left">Next</a>
+					</div>
+					<div class="pics">
+						<img src="images/sg_img0.jpg">
+						<img src="images/sg_img1.jpg">
+						<img src="images/sg_img2.jpg">
+						<img src="images/sg_img3.jpg">
+						<img src="images/sg_img4.jpg">
+						<img src="images/sg_img5.jpg">
+						<img src="images/sg_img6.png">
+					</div>
+				</div>
+			</div>
+
+
+
+		</section>
+	</section>
 </body>
 </html>
