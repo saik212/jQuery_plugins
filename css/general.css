@@ -64,3 +64,12 @@ header {
 	float: right;
 	margin: 5px;
 }
+
+/*Zoom Styles*/
+#desc-zoom {
+	text-align: center;
+}
+
+.zoom-pic {
+	margin: auto;
+}
