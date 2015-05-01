@@ -28,6 +28,13 @@ $.Zoom.prototype.magnify = function (event) {
 	var mX = event.pageX;
 	var mY = event.pageY;
 
+	// Control lens display
+	if ((mX < (offset.left + this.$image.width())) && (mY < (offset.top + this.$image.height())) && (mX > offset.left) && (mY > offset.top)) {
+		this.$lens.fadeIn(100);
+	} else {
+		this.$lens.fadeOut(100);
+	}
+
 	// Mouse offsets
 	var mXOff = mX - (this.$lens.width()/2);
 	var mYOff = mY - (this.$lens.height()/2);
@@ -38,8 +45,7 @@ $.Zoom.prototype.magnify = function (event) {
 		"top": mYOff,
 		"background-image": "url(" + this.$image.attr('src') + ")",
 		"background-size": (1.5 * this.$image.width()) + "px " + (1.5 * this.$image.height()) + "px",
-		"background-position": "-" + (1.0 * mXOff) + "px -" + (1.0 * mYOff) + "px",
-		// "background-position": "-" + mXOff + "px -" + mYOff + "px",
+		"background-position": "-" + (1.5 * mXOff - offset.left - 130) + "px -" + (1.5 * mYOff - offset.top) + "px",
 		"background-repeat": "no-repeat"
 	});
 };
