@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Plugins!</title>
+	<meta charset="UTF-8">
 	<script src="js/jquery-1.11.1.js"></script>
 	<script src="js/jquery.serializejson.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/defaults.css">
@@ -30,40 +31,31 @@
 			<h1>Select a plugin:</h1>
 			<ul class="tabs" data-content-tabs="#content-tabs">
 				<li><a href="#desc-tabs">Tabs</a></li>
-				<li><a href="#desc-scroll">Side-Scroll</a></li>
-				<li><a href="#desc-zoom" class="active">Zoom</a></li>
+				<li><a href="#desc-scroll" class="active">Side-Scroll</a></li>
+				<li><a href="#desc-zoom" class="">Zoom</a></li>
 			</ul>
 		</section>
 		<section class="plugins-wrapper">
-			<h1 class="plugin-header">Plugin Header!</h1>
-
-	<!-- 		<ul class="tabs" data-content-tabs="#content-tabs">
-				<li><a href="#desc-tabs" class="active">Tabs</a></li>
-				<li><a href="#desc-scroll">Scrollable</a></li>
-				<li><a href="#desc-zoom">Zoom</a></li>
-			</ul> -->
+			<!-- <h1 class="plugin-header">Plugin Header!</h1> -->
 
 			<div id="content-tabs">
 				<!-- Tabs Pane -->
-				<div class="tab-pane" id="desc-tabs"><p>Tabs allows for a clean look to your layout and styles by fading in the information you want and fading out what you don't want to see.</p></div>
+				<div class="tab-pane" id="desc-tabs">
+					<h1>You're using Tabs right now!</h1>
+					<p>The Tabs plugin is what you're seeing whenever you select a different plugin on the left. Tabs allows for a clean look to your layout and styles by fading in the information you want to see and fading out what you don't want to see.</p>
+				</div>
 
 				<!-- Zoom Pane -->
-				<div class="tab-pane active" id="desc-zoom">
+				<div class="tab-pane" id="desc-zoom">
 					<div class="zoom">
-						<!-- <div class="mag-lens"></div> -->
 						<div class="lens">
-							<!-- <img class="zoom-pic" src="images/sg_img4.jpg"> -->
 						</div>
-						<img class="small-pic" src="images/sg_img4.jpg">
+						<img class="small-pic" src="images/simpson.jpg">
 					</div>
 				</div>
 
 				<!-- Side-Scroll Pane -->
-				<div class="sidescroll tab-pane" id="desc-scroll">
-					<div class="scroll-buttons group">
-						<a href="javascript:void(0)" class="scroll-right">Prev</a>
-						<a href="javascript:void(0)" class="scroll-left">Next</a>
-					</div>
+				<div class="sidescroll tab-pane active" id="desc-scroll">
 					<div class="pics">
 						<img src="images/sg_img0.jpg">
 						<img src="images/sg_img1.jpg">
@@ -72,6 +64,10 @@
 						<img src="images/sg_img4.jpg">
 						<img src="images/sg_img5.jpg">
 						<img src="images/sg_img6.png">
+					</div>
+					<div class="scroll-buttons group">
+						<a href="javascript:void(0)" class="scroll-right">&larr; Prev</a>
+						<a href="javascript:void(0)" class="scroll-left">Next &rarr;</a>
 					</div>
 				</div>
 			</div>

@@ -29,7 +29,7 @@ $.Zoom.prototype.magnify = function (event) {
 	var mY = event.pageY;
 
 	// Control lens display
-	if ((mX < (offset.left + this.$image.width())) && (mY < (offset.top + this.$image.height())) && (mX > offset.left) && (mY > offset.top)) {
+	if ((mX < (offset.left + this.$image.width())) && (mY < (offset.top + this.$image.height())) && (mX > offset.left + 43 ) && (mY > offset.top + 43)) {
 		this.$lens.fadeIn(100);
 	} else {
 		this.$lens.fadeOut(100);
@@ -45,7 +45,7 @@ $.Zoom.prototype.magnify = function (event) {
 		"top": mYOff,
 		"background-image": "url(" + this.$image.attr('src') + ")",
 		"background-size": (1.5 * this.$image.width()) + "px " + (1.5 * this.$image.height()) + "px",
-		"background-position": "-" + (1.5 * mXOff - offset.left - 130) + "px -" + (1.5 * mYOff - offset.top) + "px",
+		"background-position": "-" + (1.5 * mXOff - 1.35*offset.left ) + "px -" + (1.5 * mYOff - offset.top) + "px",
 		"background-repeat": "no-repeat"
 	});
 };

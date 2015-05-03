@@ -1,6 +1,6 @@
 /*Header styles*/
 header {
-	background: #bdc3c7;
+	/*background: #bdc3c7;*/
 	display: block;
 }
 
@@ -15,11 +15,17 @@ header {
 /*Content styles*/
 #content {
 	width: 1000px;
-	height: 600px;
+	height: 450px;
+	/*overflow: hidden;*/
 	margin: auto;
+	background-color: #f1c40f;
 
 	margin-top: 20px;
 	font-family: 'Lato';
+
+	border: 2px solid #e67e22;
+	border-radius: 10px;
+
 }
 
 /*Info styles*/
@@ -27,8 +33,24 @@ header {
 	float: left;
 	box-sizing: border-box;
 	width: 200px;
-	padding: 20px;
-	background: #16a085;
+	height: 100%;
+	text-align: center;
+	letter-spacing: 5px;
+	/*padding: 20px;*/
+	background: #f39c12;
+	border-right: 2px solid #CB830F;
+	border-radius: 10px 0 0 10px;
+}
+
+.plugin-select > h1 {
+  padding-top: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  width: 180px;
+  margin: 0 auto 10px auto;
+  border-radius: 0;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /*Plugin Wrapper styles*/
@@ -36,15 +58,65 @@ header {
 	float: right;
 	box-sizing: border-box;
 	width: 800px;
-	background: #1abc9c;
+	height: 100%;
+	border-radius: 0 10px 10px 0;
+	/*background: #ecf0f1;*/
 }
 
 .plugin-header {
 	text-align: center;
 	background: #fff;
 	font-size: 30px;
-	margin-bottom: 10px;
-	background: #2ecc71;
+	/*margin-bottom: 10px;*/
+	/*background: #2ecc71;*/
+}
+
+/*Tabs styles*/
+#content-tabs {
+	height: 100%;
+}
+
+.tabs > li {
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.tabs > li > a {
+	transition: .25s;
+	text-decoration: underline;
+	border-radius: 7px;
+	padding: 5px;
+}
+
+.tabs > li > a:hover {
+	transition: .25s;
+	background: #f1c40f;
+}
+
+.tabs > li > a.active {
+	background: #f1c40f;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+#desc-tabs { 
+	box-sizing: border-box;
+  padding: 20px;
+}
+
+#desc-tabs > h1 { 
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+#desc-tabs > p {
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+  line-height: 45px;
 }
 
 /*Sidescroll styles*/
@@ -54,7 +126,14 @@ header {
 
 	text-align: center;
 	font-size: 30px;
+	letter-spacing: 4px;
+	/*text-decoration: underline;*/
 }
+
+.scroll-buttons > *:hover {
+	color: #f1c40f;
+}
+
 .scroll-right {
 	float: left;
 	margin: 5px;
@@ -65,11 +144,21 @@ header {
 	margin: 5px;
 }
 
+.pics > img {
+	height: 100%;
+	width: 100%;
+}
+
 /*Zoom Styles*/
 #desc-zoom {
 	text-align: center;
+	height: 100%;
 }
 
 .zoom-pic {
 	margin: auto;
+}
+
+.zoom {
+	height: 100%;
 }

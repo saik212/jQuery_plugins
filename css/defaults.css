@@ -10,6 +10,8 @@
 	color: inherit;
 	background: transparent;
 	list-style: none;
+
+	border-radius: inherit;
 }
 
 .group:after {
