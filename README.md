@@ -1,5 +1,5 @@
 #jQuery Plugins!
-###Visit: [jQuery_plugins](www.saikandala.com/jQuery_plugins)
+###Visit: [jQuery_plugins](http://saikandala.com/jQuery_plugins)
 
 
 ##Summary:
