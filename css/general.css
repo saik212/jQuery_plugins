@@ -86,17 +86,18 @@ header {
 	text-decoration: underline;
 	border-radius: 7px;
 	padding: 5px;
+	letter-spacing: 1px;
 }
 
 .tabs > li > a:hover {
 	transition: .25s;
 	background: #f1c40f;
+	color: #F16D0F;
 }
 
 .tabs > li > a.active {
 	background: #f1c40f;
-	font-size: 30px;
-	letter-spacing: 1px;
+	/*font-size: 30px;*/
 }
 
 #desc-tabs { 
